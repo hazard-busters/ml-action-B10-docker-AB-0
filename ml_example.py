@@ -5,6 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score
 from sklearn.metrics import confusion_matrix
+import tslearn
 
 
 # Load the Iris dataset
@@ -51,3 +52,6 @@ print(f'True Positives (Class 2): {cm[2,2]}')
 
 # print statement for print branch
 print ('This is a print statement for print branch')
+
+# print ts learn version
+print ('TS learn version: ', tslearn.__version__)
